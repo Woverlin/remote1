@@ -13,6 +13,7 @@ export default defineConfig({
       exposes: {
         './Button': './src/components/Button.jsx',
         './Page1': './src/pages/Page1.jsx',
+        './App': './src/App.jsx',
       },
       shared: ['react', 'react-dom']
     })

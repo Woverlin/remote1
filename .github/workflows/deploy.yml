@@ -14,7 +14,16 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-      - run: npm ci
+      
+      - name: Xác thực quyền Git kéo Private Repo (shared-ui)
+        run: git config --global url."https://x-access-token:${{ secrets.GH_PAT }}@github.com/".insteadOf "https://github.com/"
+        
+      - name: Set up SSH equivalent for NPM (Dự phòng)
+        run: git config --global url."https://x-access-token:${{ secrets.GH_PAT }}@github.com/".insteadOf "ssh://git@github.com/"
+
+      - name: Install Dependencies (Bỏ qua lỗi lệch version React)
+        run: npm install --legacy-peer-deps
+        
       - run: npm run build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
