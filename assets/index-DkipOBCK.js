@@ -2,7 +2,8 @@ import { t as __commonJSMin } from "./chunk-D5y7Ud3f.js";
 import { r as importShared } from "./_virtual___federation_fn_import-Dh5oeNlq.js";
 import { t as require_react } from "./react-aMBEKtNJ.js";
 import { t as require_react_dom } from "./react-dom-umwhLlbp.js";
-import { n as require_jsx_runtime, t as Button } from "./Button-CMkBSF87.js";
+import { n as require_jsx_runtime } from "./Button-CMkBSF87.js";
+import { t as App } from "./App-C_MrZTd8.js";
 //#region node_modules/scheduler/cjs/scheduler.production.js
 /**
 * @license React
@@ -9343,29 +9344,8 @@ var import_client = (/* @__PURE__ */ __commonJSMin(((exports, module) => {
 	module.exports = require_react_dom_client_production();
 })))();
 //#endregion
-//#region src/App.jsx
-var import_jsx_runtime = require_jsx_runtime();
-function App() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		style: {
-			padding: "40px",
-			fontFamily: "Arial"
-		},
-		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { children: "Remote 1 App (Standalone)" }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "This is the standalone version of Remote 1. It exposes the following Button component:" }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				style: {
-					padding: "20px",
-					border: "1px solid #ccc"
-				},
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {})
-			})
-		]
-	});
-}
-//#endregion
 //#region src/main.jsx
+var import_jsx_runtime = require_jsx_runtime();
 var { StrictMode } = await importShared("react");
 (0, import_client.createRoot)(document.getElementById("root")).render(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(App, {}) }));
 //#endregion

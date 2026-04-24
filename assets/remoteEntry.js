@@ -9,12 +9,16 @@ var exportSet = new Set([
 ]);
 var moduleMap = {
 	"./Button": () => {
-		dynamicLoadingCss(["style--uZ4eTMS.css"], false, "./Button");
+		dynamicLoadingCss(["style-CKqgR7Dm.css"], false, "./Button");
 		return __federation_import("/remote1/assets/__federation_expose_Button-C6sGusX_.js").then((module) => Object.keys(module).every((item) => exportSet.has(item)) ? () => module.default : () => module);
 	},
 	"./Page1": () => {
-		dynamicLoadingCss(["style--uZ4eTMS.css"], false, "./Page1");
-		return __federation_import("/remote1/assets/__federation_expose_Page1-DAUtigUb.js").then((module) => Object.keys(module).every((item) => exportSet.has(item)) ? () => module.default : () => module);
+		dynamicLoadingCss(["style-CKqgR7Dm.css"], false, "./Page1");
+		return __federation_import("/remote1/assets/__federation_expose_Page1-CZ7TsBqF.js").then((module) => Object.keys(module).every((item) => exportSet.has(item)) ? () => module.default : () => module);
+	},
+	"./App": () => {
+		dynamicLoadingCss(["style-CKqgR7Dm.css"], false, "./App");
+		return __federation_import("/remote1/assets/__federation_expose_App-BFukYPLj.js").then((module) => Object.keys(module).every((item) => exportSet.has(item)) ? () => module.default : () => module);
 	}
 };
 var seen = {};
